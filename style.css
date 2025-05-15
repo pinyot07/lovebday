@@ -2,13 +2,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff0f5;
     text-align: center;
-    padding: 20px;
+    padding: 60px 20px 20px; /* Added top padding for fixed music button */
     margin: 0;
   }
   
   .container {
     max-width: 600px;
     margin: 0 auto;
+    position: relative;
   }
   
   .message {
@@ -63,9 +64,10 @@ body {
     background: transparent;
     border: none;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
+    z-index: 1000; /* Make sure it's on top */
   }
   
   #musicToggle img {
