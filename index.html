@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy 22nd Birthday, My Love!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Audio starts muted & autoplay -->
+  <audio id="birthdayAudio" autoplay loop muted>
+    <source src="bdaysong.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1>🎉 Happy 22nd Birthday, Love! 🎉</h1>
+    <p class="message">To the most wonderful girlfriend, may your day be as beautiful and bright as your smile. I love you! ❤️🎂</p>
+
+    <!-- Buttons container -->
+    <div class="buttons-row">
+      <button onclick="showSurprise()">Flowers</button>
+      <button onclick="showGallery()">Pictures</button>
+      <button onclick="showMessage()">Message</button>
+    </div>
+
+    <div id="surprise" class="hidden content-box">
+      <img src="https://www.animatedimages.org/data/media/693/animated-tulip-image-0019.gif" alt="Tulip Flowers Animation" />
+      <p>🌷 These tulips bloom just like my love for you. Ayiee flowers for you mwa mwa, Happy Birthday, love! 🌷</p>
+    </div>
+
+    <div id="gallery" class="hidden content-box">
+      <img id="slideshow" src="photo1.jfif" alt="Photo Slideshow" />
+    </div>
+
+    <div id="messageBox" class="hidden content-box">
+      <img src="https://www.animatedimages.org/data/media/1485/animated-ring-image-0048.gif" alt="Birthday Ring" />
+      <p>❤️ Will You Marry Me???, hahaha I love you mwa mwa! ❤️</p>
+    </div>
+
+    <!-- Music control -->
+    <button id="musicToggle" onclick="toggleMusic()" aria-label="Toggle music">
+      <img id="musicIcon" src="mute.png" alt="Music Toggle" />
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
